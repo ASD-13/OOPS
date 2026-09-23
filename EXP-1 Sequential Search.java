@@ -24,11 +24,11 @@ index = i; break;
 }
 if (index == -1)
 {
-System.out.println("Your target integer does not exist in the array");
+  System.out.println("Your target integer does  not exist in the array");
 }
 else
 {
-System.out.println("Your target integer is in index" + index + "of the array");
+  System.out.println("Your target integer is in index" + index + "of the array");
 }
 }
 }
