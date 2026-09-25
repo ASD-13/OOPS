@@ -1,5 +1,3 @@
-Selection Sort:
-
 import java.io.*;
 public class SelectionSort
 {
