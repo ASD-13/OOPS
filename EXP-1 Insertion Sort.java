@@ -1,4 +1,3 @@
-Insertion Sort:
 import java.io.*;
 public class InsertionSort
 {
