@@ -1,5 +1,3 @@
-Queue:
-
 import java.util.*;
 public class QueueEx1
 {
