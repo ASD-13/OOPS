@@ -1,5 +1,3 @@
-Binary Search :
-
 import java.io.*;
 import java.util.*;
 public class Binary
