@@ -7,6 +7,11 @@ MyException(String msg)
 {
 super(msg);
 }
+public static void main(String[] args) throws IOException
+{
+Clock c = new Clock();
+c.input();
+}
 }
 class Clock
 {
@@ -43,8 +48,4 @@ System.out.println(e.getMessage());
 }
 class ClockDemo
 {
-public static void main(String[] args) throws IOException
-{
-Clock c = new Clock(); c.input();
-}
 }
