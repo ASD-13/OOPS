@@ -1,4 +1,5 @@
-import java.util.*; class NumberGenerate
+import java.util.*;
+class NumberGenerate
 {
 private int value; private boolean flag;
 public synchronized void put()
@@ -51,9 +52,6 @@ System.out.println(value + "is OddNumber and the cube is:" + ans);
 }
 flag = false; notifyAll();
 }
-}
-public class TestNumber
-{
 public static void main(String[] args)
 {
 final NumberGenerate obj = new NumberGenerate();
