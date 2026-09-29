@@ -13,27 +13,28 @@ pushelement(stk, 68);
 pushelement(stk, 31);
 pushelement(stk, 54);
 pushelement(stk, 26);
-popelement(stk);
-popelement(stk);
 try
 {
+while (true)
+{
 popelement(stk);
+}
 }
 catch (EmptyStackException e)
 {
 System.out.println("empty stack");
 }
 }
-static void pushelement(Stack stk, int x)
+static void pushelement(Stack < Integer > stk, int x)
 {
-stk.push(new Integer(x));
+stk.push(x);
 System.out.println("push ->" + x);
 System.out.println("stack: " + stk);
 }
-static void popelement(Stack stk)
+static void popelement(Stack < Integer > stk)
 {
 System.out.print("pop -> ");
-Integer x = (Integer) stk.pop();
+Integer x = stk.pop();
 System.out.println(x);
 System.out.println("stack: " + stk);
 }
