@@ -1,8 +1,19 @@
 import java.util.*;
-abstract class Shapes
+public abstract class Shapes
 {
 double a, b;
 abstract void printArea();
+
+public static void main(String[] args)
+{
+Shapes obj;
+obj = new Rectangle();
+obj.printArea();
+obj = new Triangle();
+obj.printArea();
+obj = new Circle();
+obj.printArea();
+}
 }
 class Rectangle extends Shapes
 {
@@ -39,18 +50,5 @@ Scanner input = new Scanner(System.in);
 System.out.print("Enter radius: ");
 a = input.nextDouble(); double area = 3.14 * a * a;
 System.out.println("Area of circle: "+ area);
-}
-}
-class abstractclassDemo
-{
-public static void main(String[] args)
-{
-Shapes obj;
-obj = new Rectangle();
-obj.printArea();
-obj = new Triangle();
-obj.printArea();
-obj = new Circle();
-obj.printArea();
 }
 }
